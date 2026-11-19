@@ -8,17 +8,17 @@ public class TicketBenchmark {
     }
     static String usingPlus(String[] f) {
         String s = "";
-        for (String x : f) s += x + "\\n";
+        for (String x : f) s += x + "\n";
         return s;
     }
     static String usingBuilder(String[] f) {
         StringBuilder b = new StringBuilder();
-        for (String x : f) b.append(x).append('\\n');
+        for (String x : f) b.append(x).append('\n');
         return b.toString();
     }
     static String usingBuffer(String[] f) {
         StringBuffer b = new StringBuffer();
-        for (String x : f) b.append(x).append('\\n');
+        for (String x : f) b.append(x).append('\n');
         return b.toString();
     }
     static long time(Runnable r) {
